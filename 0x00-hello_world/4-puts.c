@@ -5,13 +5,13 @@
  *
  * Description: This program prints a statement using the puts function
  *
- * Return: ALways 0 (success) 
+ *Return: Always 0 (Success)
  */
 
 int main(void)
 {
 	char alx[] = "\"Programming is like building a multilingual puzzle";
-  
+	
 	puts(alx);
 	return (0);
 }
