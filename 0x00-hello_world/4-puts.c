@@ -10,8 +10,8 @@
 
 int main(void)
 {
-  char alx[] = "\"Programming is like building a multilingual puzzle";
+	char alx[] = "\"Programming is like building a multilingual puzzle";
   
-  puts(alx);
-  return (0);
+	puts(alx);
+	return (0);
 }
