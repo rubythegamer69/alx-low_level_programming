@@ -2,9 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main -starting point
+ *
+ * description - check random number if +ve or -ve
+ *
+ * return: (0) Always true
+ */
+
 int main(void)
 {
 	int n;
