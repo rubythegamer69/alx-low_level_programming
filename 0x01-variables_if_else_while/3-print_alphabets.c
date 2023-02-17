@@ -11,8 +11,8 @@
 int main(void)
 {
 	char ch [52] = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-	for ( int i = 0; i < 52 ; i++ )
+	int i;
+	for (i = 0; i < 52 ; i++)
 		putchar(ch[i]);
 	putchar('\n');
 
