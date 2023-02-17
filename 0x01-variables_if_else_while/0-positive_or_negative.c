@@ -8,7 +8,7 @@
  *
  * description - check random number if +ve or -ve
  *
- * return: (0) Always true
+ * return: Always 0 (success)
  */
 
 int main(void)
