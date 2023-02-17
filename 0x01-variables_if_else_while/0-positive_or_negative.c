@@ -4,11 +4,11 @@
 #include <time.h>
 
 /**
- * main -starting point
+ * main - start point
  *
  * description - check random number if +ve or -ve
  *
- * return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
