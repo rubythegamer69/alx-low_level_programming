@@ -10,11 +10,12 @@
 
 int main(void)
 {
-	char ch[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i;
 
-	for (i = 0; i < 52 ; i++)
-		putchar(ch[i]);
+	for (i = 97; i <= 122 ; i++)
+		putchar(i);
+	for (j = 65; j <= 90 ; j++)
+		putchar(j);
 	putchar('\n');
 
 	return (0);
