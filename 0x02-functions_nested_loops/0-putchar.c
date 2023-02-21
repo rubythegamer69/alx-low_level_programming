@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char p[8] = {'p', 'u', 't', 'c', 'h', 'a', 'r', '_'};
+	char p[8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 	int a;
 
 	for(a = 0; a < 8; a++)
