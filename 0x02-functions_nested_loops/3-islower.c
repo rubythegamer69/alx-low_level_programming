@@ -1,7 +1,9 @@
 /**
  * _islower - evaluates alphabets
  *
- * Return: Always 0 (Success)
+ * @c: The character in ASCII code
+ *
+ * Return: 1 for lowercase character. 0 for the rest
  */
 int _islower(int c)
 {
