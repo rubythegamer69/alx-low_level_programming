@@ -11,12 +11,12 @@
  */
 int main(void)
 {
-	char [8] = {'p', 'u', 't', 'c', 'h', 'a', 'r', '_'};
+	char p[8] = {'p', 'u', 't', 'c', 'h', 'a', 'r', '_'};
 	int a;
 
 	for(a = 0; a < 8; a++)
 	{
-		_putchar(output[a]);
+		_putchar(output p[a]);
 	}
 	_putchar('\n');
 
