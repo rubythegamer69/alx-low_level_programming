@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 #include "main.h"
 
 /**
@@ -16,7 +14,7 @@ int main(void)
 
 	for(a = 0; a < 8; a++)
 	{
-		_putchar(output p[a]);
+		_putchar(p[a]);
 	}
 	_putchar('\n');
 
