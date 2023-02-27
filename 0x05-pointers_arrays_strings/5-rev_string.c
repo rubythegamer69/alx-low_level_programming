@@ -10,17 +10,23 @@
 
 void rev_string(char *s)
 {
-	int i, j;
+	int length, c;
+	char *begin, *end, temp;
 
-	for (i = 0; *(s + i) != '\0'; ++i)
-		;
-	for (j = i - 1; j >= 0; j--)
+	length = string_length(s);
+	begin  = s;
+	end    = s;
+
+	for (c = 0; c < length - 1; c++)
+		end++;
+
+	for (c = 0; c < length/2; c++)
 	{
-		_putchar(s[j]);
-		if (s[j] == '\0')
-		{
-			_putchar('\n');
-			break;
-		}
+		temp   = *end;
+		*end   = *begin;
+		*begin = temp;
+
+		begin++;
+		end--;
 	}
 }
