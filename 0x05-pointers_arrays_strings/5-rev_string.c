@@ -17,7 +17,7 @@ void rev_string(char *s)
 	for (j = i - 1; j >= 0; j--)
 	{
 		_putchar(s[j]);
-		if s[j] == '\0')
+		if (s[j] == '\0')
 		{
 			_putchar('\n');
 			break;
