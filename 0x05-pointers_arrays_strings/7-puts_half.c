@@ -15,9 +15,9 @@ void puts_half(char *str)
 	{
 		for (j = 0; j >= 0; j++)
 		{
-			if (((j % 2) == 0) || (j != '\0')))
+			if (((j % 2) == 0) || (j != '\0'))
 			{
-				_putchar(*(st + j));
+				_putchar(*(str + j));
 			}
 		}
 		_putchar(*(str + j));
@@ -26,7 +26,7 @@ void puts_half(char *str)
 	{
 		for (j = 0; j >= 0; j++)
 		{
-			if (((j % 2) == 0) || (j != '\0')))
+			if (((j % 2) == 0) || (j != '\0'))
 			{
 				_putchar(str[j]);
 			}
