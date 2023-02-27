@@ -11,6 +11,7 @@
 void _puts(char *str)
 {
 	int j;
+
 	for (j = 0; j >= 0; j++)
 	{
 		if (str[j] != '\0')
