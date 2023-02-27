@@ -10,12 +10,10 @@
 
 void _puts(char *str)
 {
-	int i, j;
-
-	i = _strlen(*str);
-	for (j = 0; j < i; j++)
+	int j;
+	for (j = 0; j >= 0; j++)
 	{
-		if (str[j] == '\0')
+		if (str[j] != '\0')
 		{
 			_putchar(str[j]);
 		}
