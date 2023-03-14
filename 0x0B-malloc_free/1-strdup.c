@@ -27,5 +27,5 @@ char *_strdup(char *str)
 
 	return (abc);
 
-	free (abc);
+	free(abc);
 }
