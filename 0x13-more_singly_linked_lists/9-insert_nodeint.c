@@ -3,29 +3,28 @@
 /**
  * insert_nodeint_at_index - insert node at a given position.
  * @head: head.
- * @idx: index of the list node will be added.
- * @n: integer.
+ * @idx: index of list where new node is added
+ * @n: integer element.
  *
- * Return: address of new node/NULL if failed.
+ * Return:  address of new node, or NULL if failed.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	unsigned int i = 0;
+	unsigned int i;
 	listint_t *newNode;
-	listint_t *headNode;
+	listint_t *hNode;
 
-	headNode = *head;
+	hNode = *head;
 
 	if (idx != 0)
 	{
-		while (i < idx - 1 && headNode != NULL)
+		for (i = 0; i < idx - 1 && hNode != NULL; i++)
 		{
-			headNode = headNode->next;
-			i++;
+			hNode = hNode->next;
 		}
 	}
 
-	if (headNode == NULL && idx != 0)
+	if (hNode == NULL && idx != 0)
 		return (NULL);
 
 	newNode = malloc(sizeof(listint_t));
@@ -41,8 +40,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	else
 	{
-		newNode->next = h->next;
-		h->next = newNode;
+		newNode->next = hNode->next;
+		hNode->next = newNode;
 	}
 
 	return (newNode);
