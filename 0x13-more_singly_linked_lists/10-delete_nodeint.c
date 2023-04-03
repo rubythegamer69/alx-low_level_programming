@@ -17,17 +17,17 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	if (index != 0)
 	{
-		for (i = 0; i < index - 1 && prev != NULL; i++)
+		for (i = 0; i < index - 1 && prevNode != NULL; i++)
 		{
-			prevNode = prevNode->next;
+			prevNode = prevNode->nextNode;
 		}
 	}
 
-	if (prevNode == NULL || (prevNode->next == NULL && index != 0))
+	if (prevNode == NULL || (prevNode->nextNode == NULL && index != 0))
 	{
 		return (-1);
 	}
 
-	next = prevNode->next;
+	nextNode = prevNode->nextNode;
 	return (1);
 }
