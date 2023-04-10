@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * clear_bit - set value of bit to 0.
+ * clear_bit - clears the bit.
  * at a given index.
  * @n: pointer to an unsigned long int.
  * @index: bit index.
