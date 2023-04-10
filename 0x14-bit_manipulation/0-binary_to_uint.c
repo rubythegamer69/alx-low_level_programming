@@ -9,7 +9,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int a;
-	int length, binary;
+	int length, b2;
 
 	if (!b)
 		return (0);
@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 	for (length = 0; b[length] != '\0'; length++)
 		;
 
-	for (length--, binary = 1; length >= 0; length--, binary *= 2)
+	for (length--, b2 = 1; length >= 0; length--, b2 *= 2)
 	{
 		if (b[length] != '0' && b[length] != '1')
 		{
@@ -28,7 +28,7 @@ unsigned int binary_to_uint(const char *b)
 
 		if (b[length] & 1)
 		{
-			a += binary;
+			a += b2;
 		}
 	}
 
