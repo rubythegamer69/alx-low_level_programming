@@ -1,1 +1,1 @@
-0x14. C - Bit manipulation tasks(retake)
+0x14. C - Bit manipulation tasks(reupload)
